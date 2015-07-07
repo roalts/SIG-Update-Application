@@ -3,7 +3,7 @@ package com.ieeedtu.sigupdate;
 /**
  * Created by raghav on 07/07/15.
  */
-public class SIG {
+public class Sig {
     private String name;
     private String time;
     private String topic;
