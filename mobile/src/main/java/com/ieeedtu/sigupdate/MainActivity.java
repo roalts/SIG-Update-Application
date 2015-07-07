@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private List<Sig> sigList = new ArrayList<>();
-    private Sig oss = new Sig(), embedded = new Sig(), programming = new Sig();
+    private Sig oss = new Sig(), embedded = new Sig(), programming = new Sig(), random = new Sig();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         initializeList(oss, "OSS SIG", "5:00 - 7:00", "Android Development", "Smart Class Room");
         initializeList(embedded, "Embedded Systems", "5:00 - 7:00", "Arduino", "TW1GF4");
         initializeList(programming, "Programming SIG", "5:00 - 7:00", "Trees", "TW1GF3");
-
+        initializeList(random, "Random SIG", "5:00 - 7:00", "Random Topic", "TW1GFX");
         sigList.add(oss);
         sigList.add(embedded);
         sigList.add(programming);
-
+        sigList.add(random);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(llm);
