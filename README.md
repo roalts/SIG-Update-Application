@@ -1,0 +1,1 @@
+This Application will give students notifications about which SIG is about to start and a list of SIGs that have been planned for the month.
